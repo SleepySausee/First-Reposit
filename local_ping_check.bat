@@ -94,7 +94,6 @@ echo ==========================================
 echo       Additional Diagnostics
 echo ==========================================
 echo.
-echo ## SELECTING Y WILL CLEAR THE SCREEN AND RUN ADDITIONAL DIAGNOSTICS -- CHECK INFORMATION BEFORE CONTINUING ##
 set /p "additional=Run additional diagnostics? (Y/N): "
 
 
@@ -102,7 +101,6 @@ if /I "%additional%"=="N" goto END
 if /I not "%additional%"=="Y" goto END
 
 :DIAGNOSTICS
-cls
 
 echo.
 echo ==========================================
